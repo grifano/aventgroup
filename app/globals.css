@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-quicksandSans text-primary-deepBlue;
+  }
+  .section-padding {
+    @apply py-12 lg:py-28;
+  }
+  .hero-pedding {
+    @apply pb-12 pt-[7.5rem] lg:pb-28 lg:pt-[11.5rem];
+  }
+  .custom-pagination {
+    position: static !important;
+    @apply flex gap-0.5;
+  }
+  .custom-pagination .swiper-pagination-bullet {
+    @apply h-4 w-4 bg-primary-purple;
+  }
+  .container-large {
+    @apply m-auto px-4 lg:max-w-[84rem];
+  }
+  .container-small {
+    @apply m-auto px-4 lg:max-w-[52.62rem];
+  }
+  .invert-colors {
+    @apply invert dark:invert-0;
+  }
+  .title-h1 {
+    @apply primary-text-gradient font-lora text-[2.5rem] font-bold leading-tight lg:text-[3.5rem];
+  }
+  .title-h2 {
+    @apply font-lora text-[2rem] font-medium leading-tight md:text-[3rem];
+  }
+  .title-h3 {
+    @apply font-lora text-[1.5rem] leading-tight md:text-[2rem];
+  }
+  .spacer-medium {
+    @apply h-12 lg:h-20;
+  }
+  .menu-mobile {
+    @apply invisible fixed right-0 top-[4.6rem] z-40 flex w-full translate-y-[-10px] flex-col items-end gap-6 rounded-lg bg-primary-deepBlue px-5 py-8 opacity-0 transition-all duration-500 ease-in-out lg:static lg:min-h-0 lg:flex-row lg:items-center;
+  }
+  .menu-mobile.open {
+    @apply visible translate-y-0 opacity-100;
+  }
+  .dropdown {
+    @apply flex w-full flex-col gap-6 lg:invisible lg:absolute lg:left-0 lg:top-12 lg:translate-y-[-10px] lg:gap-0 lg:rounded-lg lg:bg-white lg:p-4 lg:opacity-0 lg:shadow-xxlarge lg:transition-all lg:duration-500 lg:ease-in-out;
+  }
+  .dropdown.open {
+    @apply visible translate-y-0 opacity-100;
+  }
+
+  .menu-desktop {
+    @apply flex flex-grow gap-0 p-0 lg:visible lg:translate-y-0 lg:opacity-100;
+  }
+  .menu-link {
+    @apply rounded-full px-3 py-2 text-2xl font-semibold leading-none text-white transition-colors hover:bg-action-headerHover lg:text-base;
+  }
+  .image-corner {
+    @apply overflow-hidden rounded-xl md:rounded-3xl;
+  }
+
+  .primary-text-gradient {
+    background: linear-gradient(129deg, #a88bcb 0%, #94c6e4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+
+  .no-focus {
+    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  }
+
+  .dark-gradient {
+    background: linear-gradient(
+      232deg,
+      rgba(23, 28, 35, 0.41) 0%,
+      rgba(19, 22, 28, 0.7) 100%
+    );
+  }
+  .gradient-black-overlay {
+    background: linear-gradient(180deg, #0f021f1a 0%, #0f021f 100%);
+  }
+  .gradient-white-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+  }
+  .bg-sky {
+    background-image: url("/images/section-hero/sky.avif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-sky-smaller {
+    background-image: url("/images/section-our-mission/sky-smaller.avif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .glass-overlay {
+    @apply bg-light-transparent absolute left-0 top-0 z-10 h-full w-full backdrop-blur-sm;
+  }
+  .bg-light-transparent {
+    background: rgba(54, 90, 117, 0.6);
+  }
+  .dark-overlay {
+    @apply absolute left-0 top-0 z-10 h-full w-full bg-[rgba(15,2,31,0.4)];
+  }
+
+  .rich-text h1,
+  .rich-text h2 {
+    @apply mb-5 font-lora text-[2rem] leading-tight lg:text-[2.5rem];
+  }
+  .rich-text h3 {
+    @apply mb-5 mt-6 font-lora text-[1.5rem] leading-tight md:text-[2rem];
+  }
+  .rich-text p {
+    @apply mb-4;
+  }
+  .rich-text figure {
+    @apply mt-8 lg:my-12;
+  }
+  .rich-text figure img {
+    @apply overflow-hidden rounded-xl md:rounded-3xl;
+  }
+  .rich-text figcaption {
+    @apply mt-2 border-l-2 border-primary-beige pl-1 italic;
+  }
+  .rich-text .rich-flex {
+    @apply flex flex-col lg:flex-row lg:gap-4;
+  }
+  .rich-text .rich-col {
+    @apply basis-full;
+  }
+  .rich-text .rich-col figure {
+    @apply mt-4;
+  }
+  .form-label {
+    @apply block text-base font-semibold leading-none text-primary-deepBlue;
+  }
+  .form-field {
+    @apply w-full border-b-2 border-primary-lightBlue bg-transparent py-2 focus:border-primary-purple focus:outline-none;
+  }
+  .form-error-msg {
+    @apply text-sm text-system-error;
+  }
+  .form-success-msg {
+    @apply text-xl font-semibold text-system-success;
+  }
+}
