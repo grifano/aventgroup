@@ -16,24 +16,21 @@ const quicksandSans = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "KindKids – Bringing Hope to Children with Disabilities in Ukraine",
-  description:
-    "KindKids is a charity initiative uniting people through art and fine dining to support children with disabilities in Ukraine. Join us in making a real impact—one meal, one brushstroke, and one child at a time.",
+  title: "ADD TITLE",
+  description: "ADD DESCRIPTION",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "KindKids – Bringing Hope to Children with Disabilities in Ukraine",
-    description:
-      "KindKids is a charity initiative uniting people through art and fine dining to support children with disabilities in Ukraine. Join us in making a real impact—one meal, one brushstroke, and one child at a time.",
-    url: "https://project-kindkids.vercel.app/",
-    siteName: "KindKids",
+    title: "ADD TITLE",
+    description: "ADD DESCRIPTION",
+    siteName: "AventGroup",
     images: [
       {
-        url: "https://project-kindkids.vercel.app/images/og-image.webp",
+        url: "ADD IMAGE URL",
         width: 1200,
         height: 630,
-        alt: "KindKids - Charity Events",
+        alt: "AventGroup - ",
       },
     ],
     type: "website",

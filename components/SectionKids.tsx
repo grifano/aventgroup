@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import KidBigCard from "./KidBigCard";
-import kidsDB from "@/constants/kidsDB";
+import kidsDB from "@/constants/reviews";
 
 const SectionKids = () => {
   return (
