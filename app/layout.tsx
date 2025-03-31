@@ -1,23 +1,20 @@
 import type { Metadata } from "next";
-import { Quicksand, Lora } from "next/font/google";
+import { Poppins } from "next/font/google";
 import React from "react";
 
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
-const loraSerif = Lora({
-  variable: "--font-lora-serif",
+const poppins = Poppins({
+  variable: "--font-poppins-sans",
   subsets: ["latin"],
-});
-const quicksandSans = Quicksand({
-  variable: "--font-quicksand-sans",
-  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "ADD TITLE",
-  description: "ADD DESCRIPTION",
+  title: "AventGroup Sync with Opportunity ->",
+  description:
+    "AventGroup to miejsce, gdzie pasja spotyka nowoczesne technologie. Tworzymy rozwiązania wspierające rozwój osobisty i biznesowy.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -44,13 +41,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${quicksandSans.variable} ${loraSerif.variable} antialiased`}
-      >
-        <Header />
+    <html lang="en" suppressHydrationWarning>
+      {/* ❗️ Remove this before launch to make google index the page */}
+      <head>
+        <meta name="robots" content="noindex, nofollow" />
+      </head>
+      <body className={` ${poppins.variable} antialiased`}>
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-quicksandSans text-primary-deepBlue;
+    @apply font-poppins text-primary-deepBlue;
   }
   .section-padding {
     @apply py-12 lg:py-28;
@@ -32,13 +32,13 @@
     @apply invert dark:invert-0;
   }
   .title-h1 {
-    @apply primary-text-gradient font-lora text-[2.5rem] font-bold leading-tight lg:text-[3.5rem];
+    @apply primary-text-gradient text-[2.5rem] font-bold leading-tight lg:text-[3.5rem];
   }
   .title-h2 {
-    @apply font-lora text-[2rem] font-medium leading-tight md:text-[3rem];
+    @apply text-[2rem] font-medium leading-tight md:text-[3rem];
   }
   .title-h3 {
-    @apply font-lora text-[1.5rem] leading-tight md:text-[2rem];
+    @apply text-[1.5rem] leading-tight md:text-[2rem];
   }
   .spacer-medium {
     @apply h-12 lg:h-20;
@@ -130,10 +130,10 @@
 
   .rich-text h1,
   .rich-text h2 {
-    @apply mb-5 font-lora text-[2rem] leading-tight lg:text-[2.5rem];
+    @apply mb-5 text-[2rem] leading-tight lg:text-[2.5rem];
   }
   .rich-text h3 {
-    @apply mb-5 mt-6 font-lora text-[1.5rem] leading-tight md:text-[2rem];
+    @apply mb-5 mt-6 text-[1.5rem] leading-tight md:text-[2rem];
   }
   .rich-text p {
     @apply mb-4;

@@ -43,8 +43,7 @@ const config: Config = {
         xxlarge: "0 32px 64px -12px rgba(54, 90, 117, 0.14)",
       },
       fontFamily: {
-        lora: ["var(--font-lora-serif)"],
-        quicksandSans: ["var(--font-quicksand-sans)"],
+        poppins: ["var(--font-poppins-sans)"],
       },
     },
   },
